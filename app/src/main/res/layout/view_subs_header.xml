@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/subsName"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/subsTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Heading" />
+
+    <TextView
+        android:id="@+id/subsPackName"
+        style="@style/TextAppearance.Material3.LabelSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/subsPackIcon"
+        app:layout_constraintStart_toEndOf="@+id/subsPackIcon"
+        app:layout_constraintTop_toTopOf="@+id/subsPackIcon" />
+
+    <ImageView
+        android:id="@+id/subsPackIcon"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/subsName"
+        app:layout_constraintTop_toBottomOf="@+id/subsName"
+        app:srcCompat="@drawable/ic_dot"
+        app:tint="?colorPrimary"
+        tools:ignoreViewBinding="true" />
+
+    <ImageView
+        android:id="@+id/subsLocationIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/subsPackIcon"
+        app:layout_constraintTop_toBottomOf="@+id/subsPackIcon"
+        app:srcCompat="@drawable/ic_location"
+        app:tint="?colorPrimary"
+        tools:ignoreViewBinding="true" />
+
+    <TextView
+        android:id="@+id/subsLocation"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subsLocationIcon"
+        app:layout_constraintTop_toTopOf="@+id/subsLocationIcon"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/subsTime"
+        style="@style/TextAppearance.Material3.LabelSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="?colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="22 Jan 2020" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

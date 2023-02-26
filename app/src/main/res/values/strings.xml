@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Bersih Kotaku Admin</string>
+    <string name="home">Pesanan</string>
+    <string name="order">Beranda</string>
+    <string name="open_maps">Buka Maps</string>
+    <string name="pick_trash">Angkut Sampah</string>
+    <string name="no_data_konfir_title">Belum ada pesanan baru</string>
+    <string name="no_data_konfir_content">Silahkan menunggu pesanan dari pelanggan</string>
+    <string name="no_data_pesanan_title">Daftar pesanan kosong</string>
+    <string name="no_data_pesanan_content">Silahkan tunggu pesanan dari pelanggan</string>
+    <string name="pick_trashh">Sampah diambil</string>
+</resources>
